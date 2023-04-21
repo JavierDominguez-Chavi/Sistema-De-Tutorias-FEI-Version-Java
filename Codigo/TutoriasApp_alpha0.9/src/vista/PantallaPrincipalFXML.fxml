@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PantallaPrincipalFXMLController">
+   <children>
+      <MenuBar fx:id="menuBarTutoriasFEI" layoutY="2.0" prefHeight="25.0" prefWidth="720.0">
+        <menus>
+          <Menu fx:id="menuReportesTutoriales" mnemonicParsing="false" text="Reportes Tutoriales">
+            <items>
+              <MenuItem fx:id="menuItemLlenarReporteDeTutoria" mnemonicParsing="false" onAction="#llenarReporteDeTutoríaAcademica" text="Llenar Reporte de Tutoría" />
+                  <MenuItem fx:id="menuItemConsultarReporteGeneralDeTutorias" mnemonicParsing="false" onAction="#consultarReporteGeneralDeTutoriasAcademicas" text="Consultar Reporte General de Tutorías Académicas" />
+                  <MenuItem fx:id="menuItemConsultarReportePorTutorAcademico" mnemonicParsing="false" onAction="#consultarReportePorTutorAcademico" text="Consultar Reporte Por Tutor Académico" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuProblematicasAcademicas" mnemonicParsing="false" text="Problemáticas Académicas">
+            <items>
+              <MenuItem fx:id="menuItemConsultarProblematicasAcademicas" mnemonicParsing="false" onAction="#consultarListaProblematicasAcademicas" text="Consultar Problemáticas Académicas" />
+                  <MenuItem fx:id="menuItemConsultarSolucionesDeProblematicas" mnemonicParsing="false" onAction="#consultarListaSolucionesAProblematicas" text="Consultar Soluciones" />
+            </items>
+          </Menu>
+            <Menu fx:id="menuSesionesDeTutoria" mnemonicParsing="false" text="Sesiones de Tutoría">
+              <items>
+                <MenuItem fx:id="menuItemRegistrarHorarioDeSesionDeTutoria" mnemonicParsing="false" onAction="#registrarHorarioDeSesionDeTutoria" text="Registrar Horario de Sesión de Tutoría" />
+                  <MenuItem fx:id="menuItemConsultarHorarioDeSesionDeTutoria" mnemonicParsing="false" onAction="#consultarHorarioDeLaSesionDeTutoria" text="Consultar Horario de Sesión de Tutoría" />
+                  <MenuItem fx:id="menuItemRegistrarFechasDeSesionDeTutoria" mnemonicParsing="false" onAction="#registrarFechasDeTutoria" text="Registrar Fechas de Sesión de Tutoría" />
+                  <MenuItem fx:id="menuItemModificarFechasDeTutoria" mnemonicParsing="false" onAction="#modificarFechasDeTutoria" text="Modificar Fechas de Sesión de Tutoría" />
+              </items>
+            </Menu>
+          <Menu fx:id="menuTutoresAcademicosYEstudiantes" mnemonicParsing="false" text="Tutores Académicos y Estudiantes">
+            <items>
+              <MenuItem fx:id="menuItemRegistrarTutorAcademico" mnemonicParsing="false" onAction="#registrarTutor" text="Registrar Tutor Académico" />
+                  <MenuItem fx:id="menuItemConsultarEstudiantes" mnemonicParsing="false" onAction="#consultarListaEstudiantesProgramaEducativo" text="Consultar Estudiantes" />
+                  <MenuItem fx:id="menuItemConsultarTutoresAcademicos" mnemonicParsing="false" onAction="#consultarListaTutores" text="Consultar Tutores Académicos" />
+                  <MenuItem fx:id="menuItemModificarAsignacionesDeTutores" mnemonicParsing="false" onAction="#modificarAsignacionesDeTutores" text="Modificar Asignaciones de Tutores" />
+            </items>
+          </Menu>
+            <Menu fx:id="menuAdministracion" mnemonicParsing="false" text="Administración">
+              <items>
+                <MenuItem fx:id="menuItemConsultarProfesores" mnemonicParsing="false" onAction="#consultarProfesores" text="Consultar profesores" />
+                  <MenuItem fx:id="menuItemConsultarOfertaAcademica" mnemonicParsing="false" onAction="#consultarOfertaAcademica" text="Consultar Oferta Académica" />
+                  <MenuItem fx:id="menuItemRegistrarPeriodoEscolar" mnemonicParsing="false" onAction="#registrarPeriodoEscolar" text="Registrar Periodo Escolar" />
+                  <MenuItem fx:id="menuItemRegistrarAcademico" mnemonicParsing="false" onAction="#registrarAcademico" text="Registrar Académico" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="490.0" fitWidth="725.0" layoutX="-5.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/FondoPantallaPrincipal.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="125.0" layoutY="203.0" text="FACULTAD DE ESTADÍSTICA &#10;E INFORMATICA" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="520.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/FlorUVPantallaPrincipal.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

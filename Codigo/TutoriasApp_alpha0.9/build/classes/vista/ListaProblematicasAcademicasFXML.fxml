@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ListaProblematicasAcademicasFXMLController">
+   <children>
+      <Label layoutX="171.0" layoutY="14.0" text="Problemáticas Académicas">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="58.0" text="Filtrar" />
+      <TableView fx:id="tableViewListadoProblematicas" layoutX="27.0" layoutY="86.0" prefHeight="247.0" prefWidth="547.0">
+        <columns>
+          <TableColumn fx:id="tableColumnFechaTutoria" prefWidth="89.0" text="Fecha Tutoria" />
+          <TableColumn fx:id="tableColumnTitulo" prefWidth="229.0" text="Titulo de Problemática" />
+            <TableColumn fx:id="tableColumnExperienciaEducativa" prefWidth="228.0" text="Experiencia Educativa" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textFieldFiltrarProblematicas" layoutX="68.0" layoutY="54.0" prefHeight="25.0" prefWidth="506.0" />
+      <Button fx:id="buttonConsultar" layoutX="501.0" layoutY="345.0" mnemonicParsing="false" onAction="#consultarProblematicaAcademica" text="Consultar" />
+      <Button fx:id="buttonRegresar" layoutX="429.0" layoutY="345.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+   </children>
+</AnchorPane>

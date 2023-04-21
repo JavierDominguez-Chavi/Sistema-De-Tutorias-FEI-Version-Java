@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="387.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ConsultarReportePorTutorAcademicoFXMLController">
+   <children>
+      <ComboBox fx:id="comboBoxPeriodoEscolar" layoutX="219.0" layoutY="111.0" onAction="#obtenerNumerosDeSesionDeTutoriaPorPeriodo" prefHeight="25.0" prefWidth="219.0" promptText="Selecciona el periodo escolar" />
+      <ComboBox fx:id="comboBoxNumeroDeSesion" layoutX="219.0" layoutY="167.0" prefHeight="25.0" prefWidth="219.0" promptText="Selecciona el número de sesión" />
+      <Label layoutX="131.0" layoutY="115.0" text="Periodo Escolar:" />
+      <Label layoutX="117.0" layoutY="171.0" text="Número de sesión:" />
+      <Button fx:id="buttonBuscar" layoutX="460.0" layoutY="342.0" maxHeight="-Infinity" maxWidth="70.0" mnemonicParsing="false" onAction="#consultarReporteDeTutoriaAcademicaDelTutorAcademicoSeleccionado" prefHeight="25.0" prefWidth="67.0" text="Buscar" />
+      <Button fx:id="buttonCancelar" layoutX="371.0" layoutY="342.0" maxWidth="70.0" mnemonicParsing="false" onAction="#cancelarConsultaReportePorTutorAcademico" prefHeight="25.0" prefWidth="67.0" text="Cancelar" />
+      <Label layoutX="123.0" layoutY="226.0" text="Tutor académico:" />
+      <ComboBox fx:id="comboBoxTutorAcademico" layoutX="219.0" layoutY="222.0" prefHeight="25.0" prefWidth="219.0" promptText="Selecciona al tutor académico" />
+   </children>
+</AnchorPane>

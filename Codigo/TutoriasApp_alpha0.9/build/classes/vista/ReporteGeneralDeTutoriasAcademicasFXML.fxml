@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="673.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ReporteGeneralDeTutoriasAcademicasFXMLController">
+    <children>
+      <Label layoutX="50.0" layoutY="14.0" text="Número de tutoría academica:" />
+      <Label layoutX="514.0" layoutY="15.0" text="Fecha de la tutoría académica: " />
+      <Label fx:id="labelFechaDeTutoria" layoutX="681.0" layoutY="16.0" prefHeight="17.0" prefWidth="85.0" />
+      <Label layoutX="50.0" layoutY="47.0" text="Programa educativo:" />
+      <Label fx:id="labelProgramaEducativo" layoutX="167.0" layoutY="47.0" prefHeight="17.0" prefWidth="180.0" />
+      <Label layoutX="50.0" layoutY="82.0" text="Periodo escolar:" />
+      <Label fx:id="labelPeriodoEscolar" layoutX="146.0" layoutY="82.0" prefHeight="17.0" prefWidth="180.0" />
+      <TableView fx:id="tableViewProblematicasAcademicas" layoutX="50.0" layoutY="134.0" prefHeight="216.0" prefWidth="687.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNombreExperienciaEducativa" editable="false" prefWidth="163.0" text="Experiencia educativa" />
+          <TableColumn fx:id="tableColumnNombreProfesor" prefWidth="150.0" text="Profesor" />
+            <TableColumn fx:id="tableColumnTituloProblematica" prefWidth="142.0" text="Título" />
+            <TableColumn fx:id="tableColumnDescripcionProblematica" prefWidth="230.0" text="Descripción" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelNumeroDeTutoria" layoutX="217.0" layoutY="14.0" prefHeight="17.0" prefWidth="85.0" />
+      <Button fx:id="buttonCerrarReporteGeneralDeTutoriasAcademica" layoutX="671.0" layoutY="628.0" mnemonicParsing="false" onAction="#cerrarReporteGeneralDeTutoriasAcademicas" prefHeight="25.0" prefWidth="71.0" text="Cerrar" />
+      <Label layoutX="417.0" layoutY="46.0" text="Total de estudiantes que asistieron a las tutorías:" />
+      <Label layoutX="445.0" layoutY="81.0" text="Total de estudiantes en situacion de riesgo:" />
+      <Label fx:id="labelTotalDeAsistencias" layoutX="681.0" layoutY="46.0" prefHeight="17.0" prefWidth="85.0" />
+      <Label fx:id="labelTotalDeEstudiantesEnRiesgo" layoutX="681.0" layoutY="81.0" prefHeight="17.0" prefWidth="85.0" />
+      <Label layoutX="306.0" layoutY="110.0" text="Problemáticas académicas">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonDescargarReporteGeneralDeTutoriasAcademica" layoutX="590.0" layoutY="628.0" mnemonicParsing="false" onAction="#descargar" prefHeight="25.0" prefWidth="71.0" text="Descargar" />
+      <TableView fx:id="tableViewComentariosGenerales" layoutX="50.0" layoutY="380.0" prefHeight="216.0" prefWidth="687.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNombreTutor" prefWidth="150.0" text="Nombre del tutor" />
+          <TableColumn fx:id="tableColumnComentarioGeneral" prefWidth="535.0" text="Comentario" />
+        </columns>
+      </TableView>
+        <Label layoutX="323.0" layoutY="358.0" text="Cometarios generales">
+           <font>
+              <Font name="System Bold" size="14.0" />
+           </font>
+        </Label>
+    </children>
+    </AnchorPane>

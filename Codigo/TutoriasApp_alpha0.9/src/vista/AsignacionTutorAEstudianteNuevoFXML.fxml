@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.AsignacionTutorAEstudianteNuevoFXMLController">
+   <children>
+      <GridPane fx:id="gridPane" layoutY="66.0" prefHeight="427.0" prefWidth="826.0">
+         <columnConstraints>
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="ALWAYS" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints fillHeight="false" maxHeight="78.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" maxHeight="78.0" minHeight="0.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="391.0" minHeight="10.0" prefHeight="391.0" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="63.0" minHeight="0.0" prefHeight="0.0" valignment="CENTER" vgrow="NEVER" />
+         </rowConstraints>
+         <children>
+            <TableView fx:id="tableViewEstudiantes" nodeOrientation="LEFT_TO_RIGHT" prefHeight="391.0" prefWidth="480.0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+              <columns>
+                <TableColumn fx:id="tableColumnMatricula" minWidth="79.0" prefWidth="79.0" resizable="false" text="Matrícula" />
+                <TableColumn fx:id="tableColumnNombreEstudiante" minWidth="162.0" prefWidth="170.0" resizable="false" text="Estudiante" />
+                  <TableColumn fx:id="tableColumnTutorAsignado" minWidth="168.0" prefWidth="168.0" resizable="false" text="Tutor asignado" />
+                  <TableColumn fx:id="tableColumnAsignar" prefWidth="46.0" text="+" />
+              </columns>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TableView>
+            <TableView fx:id="tableViewTutores" prefHeight="251.0" prefWidth="263.0" GridPane.rowIndex="2">
+               <columns>
+                  <TableColumn fx:id="tableColumnNombreTutor" minWidth="168.0" prefWidth="168.0" resizable="false" text="Tutor académico" />
+                  <TableColumn fx:id="tableColumnNumeroTutorados" minWidth="77.0" prefWidth="77.0" resizable="false" text="#Tutorados" />
+               </columns>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TableView>
+            <TextField fx:id="textFieldFiltroEstudiantes" prefHeight="25.0" prefWidth="464.0" promptText="Filtrar estudiantes por nombre o matrícula" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldFiltroTutores" prefHeight="25.0" prefWidth="236.0" promptText="Filtrar tutores por nombre" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+      <Text fill="#6f6f6f" layoutX="10.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione un tutor académico en la tabla izquierda, y después utilice la columna + en la tabla derecha para asignar ese tutor a los estudiantes que desee." wrappingWidth="693.13671875">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Button fx:id="buttonCancelar" layoutX="352.0" layoutY="513.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="30.0" prefWidth="154.0" text="Cancelar" />
+      <Button fx:id="buttonGuardar" defaultButton="true" layoutX="518.0" layoutY="513.0" mnemonicParsing="false" onAction="#guardar" prefHeight="30.0" prefWidth="211.0" text="Guardar asignaciones" />
+   </children>
+</AnchorPane>

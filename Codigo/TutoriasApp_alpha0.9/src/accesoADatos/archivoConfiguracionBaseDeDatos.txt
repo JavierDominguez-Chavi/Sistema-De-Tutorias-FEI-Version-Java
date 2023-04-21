@@ -1,0 +1,3 @@
+DireccionBD = jdbc:mysql://masterofsoftware.mysql.database.azure.com/tutoriasfei2
+Usuario = usuarioFEI
+Contrasenia =  profeNOnosREPRUEBE

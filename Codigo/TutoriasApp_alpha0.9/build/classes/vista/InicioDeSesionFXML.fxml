@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InicioDeSesionFXMLController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="720.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="@../imagenes/FondoPantallaInicioDeSesion.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Label layoutX="241.0" layoutY="267.0" text="Contraseña:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldUsuario" layoutX="241.0" layoutY="198.0" prefHeight="25.0" prefWidth="232.0" />
+      <Label fx:id="labelErrorUsuario" layoutX="241.0" layoutY="223.0" prefHeight="17.0" prefWidth="232.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="100.0" text="Inicio de Sesión" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonIniciarSesion" layoutX="307.0" layoutY="363.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="25.0" prefWidth="101.0" text="INICIAR SESIÓN" />
+      <PasswordField fx:id="passwordFieldContrasenia" layoutX="241.0" layoutY="294.0" prefHeight="25.0" prefWidth="232.0" />
+      <Label fx:id="labelErrorContrasenia" layoutX="241.0" layoutY="319.0" prefHeight="17.0" prefWidth="239.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="171.0" text="Usuario:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="170.0" layoutY="14.0" prefHeight="79.0" prefWidth="381.0" text="SISTEMA DE TUTORÍAS FEI" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/FlorUVPantallaInicioDeSesion.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
