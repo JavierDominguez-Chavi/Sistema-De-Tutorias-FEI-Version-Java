@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ConsultaDeProfesoresFXMLController">
+   <children>
+      <Pane layoutY="11.0" prefHeight="507.0" prefWidth="659.0">
+         <children>
+            <TableView fx:id="tableViewTablaProfesor" layoutY="56.0" prefHeight="316.0" prefWidth="659.0">
+              <columns>
+                <TableColumn fx:id="tableColumnIdentificador" prefWidth="42.0" resizable="false" text="ID" />
+                <TableColumn fx:id="tableColumnNombreProfesor" prefWidth="260.0" resizable="false" text="Profesor" />
+                  <TableColumn fx:id="tableColumnCorreoPersonal" prefWidth="170.0" text="Correo personal" />
+                  <TableColumn fx:id="tableColumnCorreoInstitucional" prefWidth="170.0" text="Correo institucional" />
+              </columns>
+            </TableView>
+            <Button fx:id="buttonRegresar" layoutX="14.0" layoutY="454.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="30.0" prefWidth="130.0" text="Regresar" />
+            <Button fx:id="buttonSeleccionarProfesor" layoutX="385.0" layoutY="454.0" mnemonicParsing="false" onAction="#seleccionarProfesor" prefHeight="30.0" prefWidth="254.0" text="Modificar profesor" wrapText="true" />
+            <TextField fx:id="textFieldFiltro" layoutX="5.0" layoutY="20.0" prefHeight="25.0" prefWidth="639.0" promptText="Filtrar por nombres o correos del profesor" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

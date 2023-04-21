@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.RegistrarAcademicoFXMLController">
+   <children>
+      <TextField fx:id="textFieldNombre" layoutX="26.0" layoutY="120.0" prefHeight="30.0" prefWidth="222.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFieldApellidoPaterno" layoutX="26.0" layoutY="175.0" prefHeight="30.0" prefWidth="222.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFieldApellidoMaterno" layoutX="25.0" layoutY="236.0" prefHeight="30.0" prefWidth="222.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="buttonGuardar" defaultButton="true" layoutX="388.0" layoutY="364.0" minWidth="114.0" mnemonicParsing="false" onAction="#guardar" prefHeight="30.0" prefWidth="114.0" text="Guardar" />
+      <Button fx:id="buttonCancelar" cancelButton="true" layoutX="279.0" layoutY="364.0" minWidth="92.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="30.0" prefWidth="92.0" text="Cancelar" />
+      <Text layoutX="26.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese los nuevo datos del nuevo académico ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre(s)" />
+      <Text layoutX="26.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido paterno" />
+      <Text layoutX="24.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido materno" />
+      <Text layoutX="26.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo electrónico personal" />
+      <Text layoutX="25.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo electrónico institucional" />
+      <TextField fx:id="textFieldEmailInstitucional" layoutX="26.0" layoutY="364.0" prefHeight="30.0" prefWidth="222.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFieldEmailPersonal" layoutX="26.0" layoutY="298.0" prefHeight="30.0" prefWidth="222.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tableViewProgramasEducativos" layoutX="278.0" layoutY="119.0" prefHeight="211.0" prefWidth="222.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNombreProgramaEducativo" prefWidth="179.0" text="Programa Educativo" />
+          <TableColumn fx:id="tableColumnSeleccionProgramaEducativo" prefWidth="24.0" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

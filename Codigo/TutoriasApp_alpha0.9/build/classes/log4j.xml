@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM 
+          "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <appender name="mailAppender" class="org.apache.log4j.net.SMTPAppender">
+        <param name="BufferSize" value="512" />
+        <param name="SMTPProtocol" value="smtps" />
+        <param name="SMTPHost" value="smtp.gmail.com" />
+        <param name="SMTPPort" value="465" />
+        <param name="SMTPUsername" value="develop.masterofsoftware@gmail.com" />
+        <param name="SMTPPassword" value="qzgabdzcbelrcexc" />
+        <param name="From" value="develop.masterofsoftware@gmail.com" />
+        <param name="To" value="maledict@proton.me,thechavis007@gmail.com,obando_armando28@hotmail.com" />
+        <param name="Subject" value="Informe de Error" />
+ 
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-7p %d [%t] %c %x - %m%n" />
+        </layout>
+ 
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="error" />
+            <param name="LevelMax" value="fatal" />
+        </filter>
+    </appender>
+ 
+    <appender name="FILE" class="org.apache.log4j.RollingFileAppender">
+      <param name="file" value="src/exceptionLog.log"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="threshold" value="error"/>
+      <param name="append" value="true"/>
+
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="conversionPattern" value="%d{ISO8601} %-5p [%c{1}] - %m%n"/>
+      </layout>
+   </appender>
+   
+   <appender name="TELEGRAM" class="anexadorTelegram.AnexadorTelegram">
+        <param name="token" value="5429759378:AAGkJQPDFtHlIt60if9e0WgsHZvvwaXVgk8" />
+        <param name="chatid" value="5218678555" />
+        <layout class="org.apache.log4j.PatternLayout">
+           <param name="conversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+        </layout>
+   </appender>
+   
+   <appender name="TELEGRAM" class="anexadorTelegram.AnexadorTelegram">
+        <param name="token" value="5429759378:AAGkJQPDFtHlIt60if9e0WgsHZvvwaXVgk8" />
+        <param name="chatid" value="-1001709649831" />
+        <layout class="org.apache.log4j.PatternLayout">
+           <param name="conversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+        </layout>
+   </appender>
+   
+    <root>
+        <level value="INFO" />
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="mailAppender" />
+        <appender-ref ref="TELEGRAM" />
+    </root>
+
+</log4j:configuration>

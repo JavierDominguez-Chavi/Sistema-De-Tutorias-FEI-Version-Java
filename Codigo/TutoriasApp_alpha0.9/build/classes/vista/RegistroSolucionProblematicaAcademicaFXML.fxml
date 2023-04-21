@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.RegistroSolucionProblematicaAcademicaFXMLController">
+    <children>
+      <Label fx:id="labelTitulo" layoutX="269.0" layoutY="14.0" text="titulño">
+         
+      </Label>
+      <Label layoutX="29.0" layoutY="49.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: #d3d3d3;" text="Experiencia Educativa" />
+      <Label fx:id="labelExperienciaEducativa" layoutX="172.0" layoutY="49.0" text="aaaaa" wrapText="true" />
+      <Label layoutX="29.0" layoutY="74.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: #d3d3d3;" text="Profesor de la materia" />
+      <Label fx:id="labelProfesor" layoutX="172.0" layoutY="74.0" text="Label" wrapText="true" />
+      <Label layoutX="29.0" layoutY="100.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: #d3d3d3;" text="NRC" />
+      <Label fx:id="labelNRC" layoutX="172.0" layoutY="100.0" text="Label" wrapText="true" />
+      <Label layoutX="29.0" layoutY="127.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: #d3d3d3;" text="Estudiante que Reporta" />
+      <Label fx:id="labelEstudiante" layoutX="172.0" layoutY="127.0" text="Label" wrapText="true" />
+      <Label layoutX="29.0" layoutY="153.0" style="-fx-background-color: #d3d3d3;" text="Descripción" />
+      <Label fx:id="labelDescripcion" layoutX="29.0" layoutY="177.0" prefHeight="66.0" prefWidth="550.0" text="Label" wrapText="true" />
+      <Button fx:id="buttonGuardar" layoutX="520.0" layoutY="358.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+      <Button fx:id="buttonCancelar" layoutX="450.0" layoutY="358.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Label layoutX="29.0" layoutY="243.0" style="-fx-background-color: #d3d3d3;" text="Descripción de Solución" />
+      <TextArea fx:id="textAreaDescripcionSolucion" layoutX="29.0" layoutY="269.0" prefHeight="85.0" prefWidth="550.0" promptText="Ingrese Aquí su Solución" wrapText="true" />
+   </children>
+</AnchorPane>

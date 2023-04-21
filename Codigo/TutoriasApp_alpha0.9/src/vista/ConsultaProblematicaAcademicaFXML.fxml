@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="332.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ConsultaProblematicaAcademicaFXMLController">
+    <children>
+      <Label fx:id="labelTitulo" layoutX="269.0" layoutY="14.0">
+         <font>
+           
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="49.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: #d3d3d3;" text="Experiencia Educativa" />
+      <Label fx:id="labelExperienciaEducativa" layoutX="172.0" layoutY="49.0" />
+      <Label layoutX="29.0" layoutY="74.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: #d3d3d3;" text="Profesor de la materia" />
+      <Label fx:id="labelProfesor" layoutX="172.0" layoutY="74.0" />
+      <Label layoutX="29.0" layoutY="100.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: #d3d3d3;" text="NRC" />
+      <Label fx:id="labelNRC" layoutX="172.0" layoutY="100.0" />
+      <Label layoutX="29.0" layoutY="127.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: #d3d3d3;" text="Estudiante que Reporta" />
+      <Label fx:id="labelEstudiante" layoutX="172.0" layoutY="127.0" />
+      <Label layoutX="29.0" layoutY="153.0" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: #d3d3d3;" text="Descripción" />
+      <Button fx:id="buttonRegresar" layoutX="488.0" layoutY="253.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+      <Button fx:id="buttonModificar" layoutX="413.0" layoutY="253.0" mnemonicParsing="false" onAction="#modificarProblematica" text="Modificar" />
+      <Button fx:id="buttonEliminar" layoutX="346.0" layoutY="253.0" mnemonicParsing="false" onAction="#eliminarProblematica" text="Eliminar" />
+      <TextArea fx:id="textAreaDescripcionProblematica" editable="false" layoutX="29.0" layoutY="178.0" prefHeight="66.0" prefWidth="523.0" wrapText="true" />
+   </children>
+</AnchorPane>

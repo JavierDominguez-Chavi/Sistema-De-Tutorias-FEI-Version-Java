@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ConsultaEstudianteFXMLController">
+   <children>
+      <Label layoutX="33.0" layoutY="44.0" prefHeight="17.0" prefWidth="172.0" style="-fx-background-color: #d3d3d3;" text="Nombre del Estudiante" />
+      <Label layoutX="33.0" layoutY="67.0" prefHeight="17.0" prefWidth="172.0" style="-fx-background-color: #d3d3d3;" text="Matrícula" />
+      <Label layoutX="33.0" layoutY="159.0" prefHeight="17.0" prefWidth="172.0" style="-fx-background-color: #d3d3d3;" text="Tutor Asignado" />
+      <Label layoutX="33.0" layoutY="113.0" prefHeight="17.0" prefWidth="172.0" style="-fx-background-color: #d3d3d3;" text="Correo Electrónico Personal" />
+      <Label layoutX="33.0" layoutY="136.0" prefHeight="17.0" prefWidth="172.0" style="-fx-background-color: #d3d3d3;" text="Correo Electrónico Institucional" />
+      <Label layoutX="33.0" layoutY="90.0" prefHeight="17.0" prefWidth="172.0" style="-fx-background-color: #d3d3d3;" text="Semestre en Curso" />
+      <Label fx:id="labelNombreEstudiante" layoutX="215.0" layoutY="44.0" prefHeight="17.0" prefWidth="365.0" />
+      <Label fx:id="labelMatricula" layoutX="215.0" layoutY="67.0" prefHeight="17.0" prefWidth="365.0" />
+      <Label fx:id="labelSemestre" layoutX="215.0" layoutY="90.0" prefHeight="17.0" prefWidth="365.0" />
+      <Label fx:id="labelCorreoPersonal" layoutX="215.0" layoutY="113.0" prefHeight="17.0" prefWidth="365.0" />
+      <Label fx:id="labelCorreoInstitucional" layoutX="215.0" layoutY="136.0" prefHeight="17.0" prefWidth="365.0" />
+      <Label fx:id="labelNombreTutorAsignado" layoutX="215.0" layoutY="159.0" prefHeight="17.0" prefWidth="365.0" />
+      <Button fx:id="buttonRegresar" layoutX="517.0" layoutY="200.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+   </children>
+</AnchorPane>

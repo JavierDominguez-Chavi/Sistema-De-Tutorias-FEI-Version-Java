@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.AsignarExperienciaEducativaAProfesorFXMLController">
+   <children>
+      <Pane layoutX="66.0" layoutY="42.0" prefHeight="436.0" prefWidth="398.0">
+         <children>
+            <Text layoutY="55.2373046875" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtrar profesores por nombre" wrappingWidth="212.13671875" />
+            <TextField fx:id="txtFiltro" layoutY="72.1865234375" prefHeight="25.0" prefWidth="310.0" />
+            <TableView fx:id="tblProfesores" layoutY="117.1865234375" prefHeight="200.0" prefWidth="398.0">
+              <columns>
+                <TableColumn fx:id="clmProfesores" prefWidth="309.0" text="Nombre del profesor" />
+                <TableColumn fx:id="clmSeleccion" prefWidth="88.0" text="Selección" />
+              </columns>
+            </TableView>
+            <HBox layoutX="239.0" layoutY="375.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnRegresar" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+                  <Button fx:id="btnSeleccionar" mnemonicParsing="false" onAction="#seleccionarProfesor" text="Seleccionar" />
+               </children>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione un profesor para asignarle experiencias educativas" textAlignment="CENTER" wrappingWidth="386.13671875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+         <opaqueInsets>
+            <Insets right="20.0" top="20.0" />
+         </opaqueInsets>
+      </Pane>
+   </children>
+</AnchorPane>

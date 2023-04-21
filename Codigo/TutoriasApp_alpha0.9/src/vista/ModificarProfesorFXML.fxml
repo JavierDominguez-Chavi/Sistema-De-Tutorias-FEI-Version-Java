@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ModificarProfesorFXMLController">
+   <children>
+      <TextField fx:id="textFieldNombre" layoutX="26.0" layoutY="120.0" prefHeight="30.0" prefWidth="222.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFieldApellidoPaterno" layoutX="264.0" layoutY="120.0" prefHeight="30.0" prefWidth="105.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFieldApellidoMaterno" layoutX="381.0" layoutY="120.0" prefHeight="30.0" prefWidth="105.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="buttonGuardar" defaultButton="true" layoutX="348.0" layoutY="348.0" minWidth="120.0" mnemonicParsing="false" onAction="#guardar" prefHeight="30.0" prefWidth="136.0" text="Guardar" />
+      <Button fx:id="buttonCancelar" cancelButton="true" layoutX="26.0" layoutY="348.0" minWidth="105.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="30.0" prefWidth="105.0" text="Cancelar" />
+      <Text layoutX="26.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese los nuevo datos del profesor seleccionado">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre(s)" />
+      <Text layoutX="264.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido paterno" />
+      <Text layoutX="383.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido materno" />
+      <Text layoutX="26.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo electrónico personal" />
+      <Text layoutX="264.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo electrónico institucional" />
+      <Label fx:id="labelCorreoInstitucional" layoutX="416.0" layoutY="184.0" style="-fx-background-color: lightgray;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="textFieldEmailInstitucional" layoutX="264.0" layoutY="184.0" prefHeight="30.0" prefWidth="222.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFieldEmailPersonal" layoutX="26.0" layoutY="184.0" prefHeight="30.0" prefWidth="222.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="buttonAsignarExperienciasEducativas" cancelButton="true" layoutX="146.0" layoutY="348.0" minWidth="120.0" mnemonicParsing="false" onAction="#verificarExistenciaDeExperienciasEducativas" prefHeight="30.0" prefWidth="192.0" text="Asignar Experiencias Educativas" />
+   </children>
+</AnchorPane>
